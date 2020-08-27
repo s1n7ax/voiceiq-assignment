@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" verbose="10" parallel="methods"
+	thread-count="4">
+
+	<test name="Test" preserve-order="true">
+		<classes>
+			<class name="gtn.automation.test.testsuites.VerifyYolaWebsiteCreation">
+				<parameter name="class" value="class"></parameter>
+				<methods>
+					<include name="tc_RegistrationFormValidation">
+						<parameter name="browser" value="chrome"></parameter>
+					</include>
+
+					<include name="tc_RegistrationFormValidation1">
+						<parameter name="browser" value="chrome"></parameter>
+					</include>
+
+					<include name="tc_RegistrationFormValidation2">
+						<parameter name="browser" value="firefox"></parameter>
+					</include>
+
+					<include name="tc_RegistrationFormValidation3">
+						<parameter name="browser" value="firefox"></parameter>
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
